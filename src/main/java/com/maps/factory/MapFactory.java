@@ -1,5 +1,8 @@
-package factory;
-import java.util.*;
+package com.maps.factory;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.TreeMap;
 
 
 public class MapFactory {
