@@ -1,11 +1,12 @@
 package main;
 import factory.MapFactory;
+import java.io.IOException;
 import java.util.*;
 import model.Inventario;
 import service.Carrito;
 
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args)throws IOException{
 
         Scanner sc = new Scanner(System.in);
 
@@ -39,10 +40,13 @@ public class Main {
             switch(eleccion){
                 case 1:
                     System.out.println("Ingrese producto: ");
-                    String prod = sc.nextLine();
+                    String prod = sc.nextLine().trim();
 
                     if (inventario.containsKey(prod)){
-                        carrito.agregarProducto(prod);
+                        System.out.print("Ingrese cantidad: ");
+                        int cantidad = sc.nextInt();
+                        sc.nextLine();
+                        carrito.agregarProducto(prod, cantidad);
                         System.out.println("Se agrego el producto");
 
                     }else{
@@ -52,7 +56,7 @@ public class Main {
 
                 case 2:
                     System.out.println("Ingrese producto: ");
-                    String p = sc.nextLine();
+                    String p = sc.nextLine().trim();
 
                     if (inventario.containsKey(p)){
                         System.out.println("Categoria: " + inventario.get(p));

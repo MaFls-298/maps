@@ -10,8 +10,8 @@ public class Carrito {
 
     }
 
-    public void agregarProducto(String producto){
-        carrito.put(producto, carrito.getOrDefault(producto, 0)+1);
+    public void agregarProducto(String producto, int cantidad){
+        carrito.put(producto, carrito.getOrDefault(producto, 0)+cantidad);
 
 
     }
