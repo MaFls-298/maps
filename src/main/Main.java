@@ -1,11 +1,8 @@
 package main;
 import factory.MapFactory;
+import java.util.*;
 import model.Inventario;
 import service.Carrito;
-
-import java.util.*;
-import main.factory.MapFactory;
-import main.model.Inventario;
 
 public class Main {
     public static void main(String[] args){
