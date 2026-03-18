@@ -11,14 +11,14 @@ public class Carrito {
     }
 
     public void agregarProducto(String producto){
-        carrito.put(producto, carrito.getORDefault(producto, 0)+1)
+        carrito.put(producto, carrito.getOrDefault(producto, 0)+1);
 
 
     }
 
     public void mostrarCarrito(Map<String, String>inventario){
         for (String producto : carrito.keySet()){
-            System.out.println(producto + " | " + inventario.get(producto)+ "| Cantidad: " + carito.get(prodcuto));
+            System.out.println(producto + " | " + inventario.get(producto)+ "| Cantidad: " + carrito.get(producto));
 
         }
     }

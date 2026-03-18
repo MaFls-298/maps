@@ -17,12 +17,12 @@ public class Main {
         System.out.println("3. LinkedHashMap");
 
         int opcion = sc.nextInt();
-        sc.nextLine()
+        sc.nextLine();
 
         Map<String, String> inventario = MapFactory.getMap(opcion);
-        inventario = Inventario.cargarInventario("data/inventario.txt",inventario);
+        inventario = Inventario.cargarInventario("data/ListadoProducto.txt",inventario);
 
-        main.service.Carrito carrito = new Carrito();
+        Carrito carrito = new Carrito();
         int eleccion;
 
         do { 
@@ -38,7 +38,7 @@ public class Main {
             eleccion = sc.nextInt();
             sc.nextLine();
 
-            switch(choice){
+            switch(eleccion){
                 case 1:
                     System.out.println("Ingrese producto: ");
                     String prod = sc.nextLine();
@@ -73,7 +73,7 @@ public class Main {
                     break;
                 
                     case 5:
-                        for (String key : inventario.KeySet()){
+                        for (String key : inventario.keySet()){
                             System.out.println(key + " | " + inventario.get(key));
                         }
                         break;
@@ -92,6 +92,6 @@ public class Main {
 
             }
 
-        } while (choice !=0);
+        } while (eleccion !=0);
     }
 }

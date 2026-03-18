@@ -6,7 +6,7 @@ import java.util.*;
 public class Inventario {
 
     public static Map<String, String> cargarInventario(String archivo, Map<String, String> map){
-        BufferedReader br = new BufferredReader(new FileReader("data/inventario.txt"))
+        BufferedReader br = new BufferedReader(new FileReader("data/ListadoProducto.txt"));
         String linea;
         while ((linea = br.readLine()) !=null){
             String[] partes = linea.split("\\|");
