@@ -1,4 +1,4 @@
-package main.factory;
+package factory;
 import java.util.*;
 
 
@@ -12,8 +12,7 @@ public class MapFactory {
             case 3:
                 return new LinkedHashMap<>();
             default:
-                throw new IllegalArgumentException("
-                Opción invalida");
+                throw new IllegalArgumentException("Opción invalida");
                 
 
         }

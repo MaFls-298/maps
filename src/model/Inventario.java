@@ -1,4 +1,4 @@
-package main.model;
+package model;
 
 import java.io.*;
 import java.util.*;
@@ -11,7 +11,7 @@ public class Inventario {
         while ((linea = br.readLine()) !=null){
             String[] partes = linea.split("\\|");
 
-            if (parte.length==2){
+            if (partes.length==2){
                 String categoria = partes[0];
                 String producto = partes[1];
                 map.put(producto, categoria);

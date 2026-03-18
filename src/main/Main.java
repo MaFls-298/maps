@@ -1,3 +1,4 @@
+package main;
 import factory.MapFactory;
 import model.Inventario;
 import service.Carrito;
