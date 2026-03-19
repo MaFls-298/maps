@@ -1,4 +1,4 @@
-package com.maps.factory;
+package com.maps;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -6,7 +6,7 @@ import java.util.TreeMap;
 
 
 public class MapFactory {
-    public static Map<String, String> getMap(int opcion){
+    public static <K, V> Map<K, V> getMap(int opcion){
         switch(opcion){
             case 1:
                 return new HashMap<>();
@@ -16,9 +16,6 @@ public class MapFactory {
                 return new LinkedHashMap<>();
             default:
                 throw new IllegalArgumentException("Opción invalida");
-                
-
         }
     }
-    
 }

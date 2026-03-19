@@ -1,4 +1,4 @@
-com\maps\main\Main.class
-com\maps\service\Carrito.class
-com\maps\model\Inventario.class
-com\maps\factory\MapFactory.class
+com\maps\Carrito.class
+com\maps\Inventario.class
+com\maps\Main.class
+com\maps\MapFactory.class

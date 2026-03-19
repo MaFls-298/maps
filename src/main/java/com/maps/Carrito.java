@@ -1,15 +1,14 @@
-package com.maps.service;
-import java.util.HashMap;
+package com.maps;
 import java.util.Map;
 
 
 public class Carrito {
     private Map<String, Integer> carrito;
 
-    public Carrito(){
-        carrito = new HashMap<>();
-
+    public Carrito(Map<String, Integer> carritoMap){
+        this.carrito = carritoMap;
     }
+
 
     public void agregarProducto(String producto, int cantidad){
         carrito.put(producto, carrito.getOrDefault(producto, 0)+cantidad);

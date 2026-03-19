@@ -1,4 +1,4 @@
-package com.maps.model;
+package com.maps;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
